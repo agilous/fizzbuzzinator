@@ -9,9 +9,8 @@ RSpec.describe Fizzbuzzinator, type: :model do
 
   it 'produces the expected result' do
     expected_result = [
-      1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 'Fizz',
-      14, 'Fizzbuzz', 16, 17, 'Fizz', 19, 'Buzz', 'Fizz', 22, 'Fizz', 'Fizz',
-      'Buzz'
+      1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, fizz, 14, fizzbuzz,
+      16, 17, fizz, 19, buzz, fizz, 22, fizz, fizz, buzz
     ]
 
     result = (1..25).map do |number|
